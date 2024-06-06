@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    background-color: #f0f2f5;
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 70px;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+
+.container {
+    max-width: 800px;
+   margin-bottom: 150px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fix spacing issues */
+.navbar + .container {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
